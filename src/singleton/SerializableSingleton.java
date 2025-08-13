@@ -7,7 +7,7 @@ import java.io.Serializable;
  * During deserialization it will create the new object every time if we go in traditional way.
  * To resolve it add readResolve method which will ensure that during deserialize we return same instance.
  *
- * Check Main class for violation example
+ * Check decorator.Main class for violation example
  */
 public class SerializableSingleton implements Serializable {
     private static  SerializableSingleton instance = null;
